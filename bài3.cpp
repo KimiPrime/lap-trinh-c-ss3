@@ -1,10 +1,14 @@
 #include <stdio.h>
-#define PI 3.14
 
 int main() {
-    float r;
-    printf("Nhap r: ");
+    float r, pi = 3.14159; 
+    printf("Nhap ban kinh hinh tron: ");
     scanf("%f", &r);
-    printf("Chu vi: %.2f\nDien tich: %.2f\n", 2 * PI * r, PI * r * r);
+    
+    float perimeter = 2 * pi * r;   
+    float area = pi * r * r;        
+    
+    printf("Hinh tron co chu vi %.2f va dien tich %.2f\n", perimeter, area);
+    
     return 0;
 }
